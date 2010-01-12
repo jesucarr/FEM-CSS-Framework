@@ -12,20 +12,6 @@ body, input, textarea, select, legend {
 	font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
 	font-size: 1em;
 }
-a:link {
-	color: #000;
-}
-a:visit {
-	color: #ccc;
-}
-a:hover {
-	background-color: #666;
-	color: #fff;
-}
-a:active {
-	background-color: #ccc;
-	color: #000;
-}
 a:focus {
 	outline: 1px dotted;
 }

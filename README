@@ -1,0 +1,122 @@
+FEM CSS Framework
+============================
+
+FEM is based a lot in the 960 Grid System, but with a twist in the philosophy to make it more flexible and in my opinion more powerful.
+The downside is that it's a bit more complicated to learn, you write more code, and it's a bit heavier. Is up to you to decide if it's worth for you.
+I changed several things to adapt them to my taste, it doesn't mean that is better, and not everyone will like it, but if you do, great :)
+
+
+The grid (grid.css)
+============================
+
+First thing to say is that is just a 12 column grid, I found 12 columns the simplest and more suitable for most cases. 
+With more I have to start opening the design file to count columns, less the columns start to be too big.
+Also with 12 columns and using 8 columns for content and 4 columns for sidebar, the dimensions in relation to the with (960px) are close to the Golden Ratio. Not something to worry to much but it's a extra point.
+
+The columns have 10px margin on each side, which makes a 20px gutter. Nice to have some breathe between boxes. But we can get rid of it if we want, as I'll explain later.
+
+It is a fixed with layout, as 99% of the projects will be fixed sizes, and is easier to design with it.
+If you need fluid or elastic layout you can check this other two grid systems based on 960, fluid: http://www.designinfluences.com/fluid960gs/, elastic: http://csswizardry.com/typogridphy/
+
+The total width as is becoming standard is 960px. All modern monitors support at least 1024 × 768 pixel resolution. 960 is divisible by 2, 3, 4, 5, 6, 8, 10, 12, 15, 16, 20, 24, 30, 32, 40, 48, 60, 64, 80, 96, 120, 160, 192, 240, 320 and 480. This makes it a highly flexible base number to work with. 
+
+In naming conventions I prefer to use - insead of _. This is to keep consistency in my CSS naming, since the CSS properties are hyphenated.
+The other reason is for SEO. If a selector is an id, it could be used as anchor link, i.e. <a href="#this-is-the-content">go to content</a>, and can be part of the URL, and is better to use hyphens in URLs http://www.searchenginejournal.com/google-underscores-hyphens/6010/
+
+Also I feel a bit strange calling grid-X to the columns, I'd rather call them boxes, so for me the grid is all, and inside we have boxes:
+<div class="grid-centered">
+	<div class="box-8">
+		...
+	</div>
+	<div class="box-4">
+		...
+	</div>
+</div>
+	
+In essence it works the same as 960: box-8 covers the first 8 columns and box-4 the next 4. 
+
+With this system we have the possibility to expand the box to avoid the gutter. This is different than removing the margin, this will make the box bigger.
+Why? to be able to close boxes together for example.
+It can be done in the left, the right or both: box-8-expand-left, box-8-expand-right, box-8-expand. Maybe you ask if it wouldn't be better to name like "box-8 expand", and I agree it would, but to maintain IE6 compatibility, which doesn't support nested classes, must be done like this.
+You can also contract the box, so we can play with box distances and make them same separation as the normal gutter. It's better to see the example to understand.
+
+To avoid the margins, i.e. for nested boxes the classes are no-margin-left and no-margin-right. I prefer to write more but be more semantic, so is easy understandable.
+
+Now if we want to clear for the next floating boxes, I prefer to wrap them in another box instead of adding <div class="clear"></div>. 
+This way they are grouped, and is possible to add styles, backgrounds etc. to the group.
+This can be done with the box-X-expand:
+<div class="grid-centered">
+	<div class="box-12-expand">
+		<div class="box-8">
+			...
+		</div>
+		<div class="box-4">
+			...
+		</div>
+	</div>
+	<div class="box-12-expand">
+		<div class="box-8">
+			...
+		</div>
+		<div class="box-4">
+			...
+		</div>
+	</div>
+</div>
+
+By utilizing the push-X and pull-X classes, elements can be rearranged, independent of the order in which they appear in the markup. This allows you to keep more pertinent info higher in the HTML, without sacrificing precision in your page layout.
+
+By utilizing the prefix-X and prefix-X classes, we can leave white space before of after the boxes.
+
+I also added the left and right classes just to float elements for example within a box of text.
+
+One last point: if you want to use a border in one of the boxes, it'd break the grid sizes, so the best way to do it is adding a interior div and adding the border to it:
+<div class="box-4">
+	<div class="border">
+		...
+	</div>
+</div>
+
+Check the examples.
+
+
+The text (text.css)
+============================
+
+I like to use relative sizes in text, not only for IE accessibility (it can't resize text based in pixels), but also for easy global resizing.
+I have a proportions of text, headers etc. and only need to change one line to resize all accordingly.
+
+It maintains the vertical rhythm, so the text of different columns rest under the same horizontal lines. 
+It's very fragile, for instance if you add a pixel border to some element it would unbalance everything, or if you add an image with non proportional height, but in some other cases will work.
+That is not that important, we can live with that, at least we tried :)
+
+I also added blockquote and pre styles by default. It doesn't harm and in most cases will be enough.
+
+The fonts used are a mix of Mac, Windows, and Linux fonts, to make them as similar as possible in all OS, using the standard style in the rare case your system doesn't have none of them.
+
+
+Rapid prototyping styles (form.css, table.css, menu.css, grey-box.css)
+============================
+
+I added some general styles to make wireframes fast. Basic styles for forms, tables, menu, and the Gray Box method to background boxes easy.
+They can be used as start point for our custom designs.
+
+
+Credits and inspiration
+============================
+http://960.gs
+http://www.blueprintcss.org/
+http://particletree.com/features/rediscovering-the-button-element/
+http://www.designinfluences.com/fluid960gs/12/fixed/jquery/
+http://csswizardry.com/typogridphy/
+http://v3.jasonsantamaria.com/archive//2004/05/24/grey_box_method.php
+http://24ways.org/2006/compose-to-a-vertical-rhythm
+http://www.alistapart.com/articles/settingtypeontheweb
+http://code.google.com/p/the-golden-grid/
+http://www.1kbgrid.com/
+http://meyerweb.com/eric/tools/css/reset/ 
+
+
+License
+============================
+Licensed under GPL and MIT. Check licenses folder.

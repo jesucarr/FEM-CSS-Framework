@@ -27,3 +27,96 @@ body {
 h5, h6 {
 	text-transform: uppercase;
 }
+a:link {
+	color: #000;
+}
+a:visit {
+	color: #ccc;
+}
+a:hover {
+	background-color: #666;
+	color: #fff;
+}
+a:active {
+	background-color: #ccc;
+	color: #000;
+}
+/* menu __________________________________*/
+ul.menu-horizontal li a {
+	text-decoration: none;
+}
+ul.menu-vertical li a {
+	text-decoration: none;
+}
+/* table __________________________________*/
+table {
+	border:1px solid #bbb;
+}
+
+thead th {
+	border-bottom:2px solid #888;
+	background:#bbb;
+}
+thead th.table-head {
+	color:#fff;
+	background-color:#555;
+	border:1px solid #555;
+}
+tbody th,
+tbody td {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	background:#eee;
+}
+tbody tr.odd th,
+tbody tr.odd td {
+	background:#fff;
+}
+tfoot th,
+tfoot td {
+	border-top:2px solid #666;
+	background:#eee;
+}
+
+/* horizontal __________________________________*/
+ul.menu-horizontal {
+	display: block;
+	margin-bottom: 1.7em;
+	overflow: hidden;
+	height: 1%;
+	background-color: #ddd;
+}
+ul.menu-horizontal li {
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	list-style: none;
+}
+ul.menu-horizontal li a {
+	display: block;
+	padding: .0em 20px;
+	color: #fff;
+	background-color: #888;
+	text-decoration: none;
+	font-weight: bold;
+	border-left: .01 solid #555;
+	border-top: .01 solid #777;
+}
+ul.menu-horizontal li a:hover, ul.menu-horizontal li.current a {
+	background-color: #666;
+}
+
+/* vertical __________________________________*/
+
+ul.menu-vertical li a {
+	color: #fff;
+	background-color: #888;
+	border-left: 1px solid #555;
+	border-top: 1px solid #777;
+}
+ul.menu-vertical li ul li a {
+	background-color: #aaa;
+}
+ul.menu-vertical li a:hover, ul.menu-vertical li.current a {
+	background-color: #666;
+}

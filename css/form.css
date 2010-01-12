@@ -24,13 +24,12 @@ form .field {
 }
 form label, form input, form textarea {
 	display: block;
-	
+}
+form input, form textarea, form select {
+	border: 1px solid #ccc;
+	padding: 6px 6px 5px 6px;
 }
 
-form .submit {
-	width: auto;
-	margin-bottom: 1.8em;
-}
 form .inline .field label {
 	float:left;
 	margin-right:3%;
@@ -47,14 +46,31 @@ form .options label {
 form .options input {
 	float: left;
 	width: auto;
+	border: none;
 }
 form .inline .field input {
 	float: left;
 }
-form .inline input.submit {
+form  .buttons {
+	height: 1%;
+	overflow: hidden;
+	margin-bottom: 1.8em;
+}
+form .inline .buttons {
 	margin-left: 23%;
+	
 }
-form .inline .field .submit {
+form .inline .field .buttons {
 	float: left;
+	width: auto;
 	margin-left: 3%;
+	font-size: 1.05em;
 }
+form .buttons button, form  .buttons input {
+	float: left;
+	margin-right: 3%;
+}
+input:focus, textarea:focus, select:focus {
+	background-color: #fafafa;
+}
+
