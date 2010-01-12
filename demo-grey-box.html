@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>FEM CSS Framework : Grey box demo</title>
+<link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/grid.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/text.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/menu.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/table.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/form.css" media="all" rel="stylesheet" type="text/css" />
+<link href="css/grey-box.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	
+<div class="grid-centered">
+	<div class="box-12-expand background">
+		<div class="box-12">
+			<div class="box">
+				<h2>
+					FEM CSS Framework
+				</h2>
+				<p>The base is a 12 columns grid. The total width is 960. The columns have 10px margin in each side, so it makes 20px gutter between columns.</p>
+				<p>We can remove that margin or expand or contract the box to play with that gutter.</p>
+				<p>The idea is to wrap each group of boxes inside another, so they won't mix with the next floated boxes and also we can decorate with borders or backgrounds</p>
+			</div>
+		</div>
+		
+		
+		<div class="box-12">
+			<ul class="menu-horizontal" >
+				<li>
+					<a href="#a">Menu 1</a>
+					
+				</li>
+				<li class="current">
+					<a href="#">Menu 2</a>
+				</li>
+				<li>
+					<a href="#">Menu 3</a>
+					
+				</li>
+				<li>
+					<a href="#">Menu 4</a>
+				</li>	
+			</ul>
+		</div>
+	
+		<div class="box-12-expand">
+			<div class="box-8-expand">
+				<div class="box-8-expand-right content ">
+					<div class="box">
+						<p>This box takes 8 columns and is expanded to the right to remove the gutter. It uses class="box-8-expand-right"</p>
+						<h1>Header 1</h1>
+						<p>Text sample, <a href="#">link</a>, etc.</p>
+						<h2>Header 2</h2>
+						<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+						<h3>Header 3</h3>
+						<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+						<h4>Header 4</h4>
+						<p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+						<pre>
+Code line 1
+Code line 2
+	Code tabbed
+						</pre>
+						<h5>Header 5</h5>
+						<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+						<hr />
+						<h6>Header 3</h6>
+						<p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+						<h1>Header 1</h1>
+						<h2>Header 2</h2>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+							
+							<cite>Julio Cesar</cite>
+						</blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<div class="box-3 right">
+							<blockquote>
+								Lorem ipsum dolor sit amet.
+
+								<cite>Julio Cesar</cite>
+							</blockquote>
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					</div>
+				</div>
+				<div class="box-8">
+					<div class="box">
+						<h2>Tables</h2>
+						<table summary="This is the summary of the table">
+							<caption>Example table</caption>
+							<colgroup>
+								<col class="col-a" />
+								<col class="col-b" />
+								<col class="col-c" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="3" class="table-head">Table heading</th>
+								</tr>
+								<tr>
+									<th>Column 1</th>
+									<th>Column 2</th>
+									<th class="number">Column 3</th>
+								</tr>
+							</thead>
+							<tfoot>
+								<tr>
+									<th>Subtotal</th>
+									<td></td>
+									<th class="number">$100.00</th>
+								</tr>
+								
+							</tfoot>
+							<tbody>
+								<tr class="odd">
+									<th>Lorem ipsum</th>
+									<td>Dolor sit</td>
+									<td class="number">100.00</td>
+								</tr>
+								<tr>
+									<th>Dolor sit</th>
+									<td>Nostrud exerci</td>
+									<td class="number">2000.00</td>
+								</tr>
+								<tr class="odd">
+									<th>Nostrud exerci</th>
+									<td>Lorem ipsum</td>
+									<td class="number">30.00</td>
+								</tr>
+								<tr>
+									<th>Lorem ipsum</th>
+									<td>Dolor sit</td>
+									<td class="number">400.00</td>
+								</tr>
+								<tr class="odd">
+									<th>Dolor sit</th>
+									<td>Nostrud exerci</td>
+									<td class="number">50.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div class="box-8">
+					<div class="box">
+						<h2>Forms</h2>
+						<form action="">
+							<div class="inline">
+								<h3>Inline fields</h3>
+								<div class="field">
+									<label for="text1">Text: </label>
+									<input type="text" id="text1" name="text1" value="" />
+								</div>
+								<div class="field">
+									<label for="password1">Password: </label>
+									<input type="password" id="password1" name="password1" />
+								</div>
+								<input class="submit" type="submit" value="Send" />
+							</div>
+							
+							<h3>Block fields</h3>
+							<div class="field">
+								<label for="text2">Text: </label>
+								<input type="text" id="text2" name="text2" value="" />
+							</div>
+							<div class="field">
+								<label for="password2">Password: </label>
+								<input type="password" id="password2" name="password2" />
+							</div>
+
+							<div class="field">
+								<label for="textarea1">Textarea: </label>
+								<textarea id="textarea1" name="textarea1" rows="5" cols="20"></textarea>
+							</div>
+							<div class="field">
+								<label for="select1">Option select: </label>
+								<select id="select1" name="select1">
+									<option value="">Select Option...</option>
+									<option value="option1">Option 1 </option>
+									<option value="option2">Option 2 </option>
+									<option value="option3">Option 3 </option>
+
+								</select>
+							</div>
+							<div class="field">
+								<label for="select2">Option select multiple: </label>
+								<select id="select2" name="select2" multiple="multiple">
+
+									<option value="option1">Option 1 </option>
+									<option value="option2">Option 2 </option>
+									<option value="option3">Option 3 </option>
+
+								</select>
+							</div>
+							<div class="field">
+								Option checkbox:
+								<div class="options">
+									<label for="checkbox1">Checkbox 1: </label>
+									<input type="checkbox" id="checkbox1" name="checkbox1" value="1" />
+								</div>
+								<div class="options">
+									<label for="checkbox2">Checkbox 2: </label>
+									<input type="checkbox" id="checkbox2" name="checkbox2" value="2" />
+								</div>
+							</div>
+							<div class="field">
+								Option Radio:
+								<div class="options">
+									<label for="radio1">Radio 1: </label>
+									<input type="radio" id="radio1" name="radio1" value="1" />
+								</div>
+								<div class="options">
+									<label for="radio2">Radio 2: </label>
+									<input type="radio" id="radio2" name="radio1" value="2" />
+								</div>
+							</div>
+
+							<input type="submit" value="Register" class="submit" />
+
+							<h3>Inline Button</h3>
+							<div class="inline">
+								<div class="field">
+									<label for="text3">Inline Button: </label>
+									<input type="text" id="text3" name="text3" value="" />
+									<input class="submit" type="submit" value="Send" />
+								</div>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="box-4-expand">
+				<div class="box-4-expand-left ">
+					<div class="box">
+						<p>This box takes 4 columns and is expanded to the left to remove the gutter. It uses class="box-4-expand-left"</p>
+					</div>
+		
+		
+				</div>
+				
+				<div class="box-4-expand">
+					<div class="box-2">
+						<div class="box">
+							<p>we can use half gutter margin. Also as this 2 boxes of 2 columns are wrapped in a box of 4 columns, this one can be as hight as we want and won't mix with the next ones.</p>
+						</div>
+					</div>
+
+					<div class="box-2">
+						<div class="box">
+							<p>again half gutter margin</p>
+						</div>
+					</div>
+				</div>
+	
+				<div class="box-4-expand">
+					<div class="box-2-contract-left">
+						<div class="box">
+							<p>or we can use full gutter margin. For that it is contracted to the left using class="box-2-contract-left"</p>
+						</div>
+					</div>
+	
+					<div class="box-2-contract-right">
+						<div class="box">
+							<p>again full gutter margin</p>
+						</div>
+					</div>
+				</div>
+				<div class="box-4-expand">
+					<div class="box-4">
+						<div class="box border">
+							<p>we can use border like here and still respect the grid dimensions.</p>
+						</div>
+					</div>
+	
+					
+				</div>
+				<div class="box-4">
+					<div class="box">
+						<h2>Lists</h2>
+						<h3>Unordered list</h3>
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+						<ul>
+							<li>
+								Lorem
+								<ul>
+									<li>
+										Lorem
+
+									</li>
+									<li>Ipsum</li>
+									<li>Dolor</li>
+									<li>Sit</li>
+									<li>Amet</li>
+								</ul>
+							</li>
+							<li>Ipsum</li>
+							<li>Dolor</li>
+							<li>Sit</li>
+							<li>Amet</li>
+						</ul>
+						<h3>Ordered list</h3>
+						<ol>
+							<li>Lorem</li>
+							<li>Ipsum</li>
+							<li>Dolor</li>
+							<li>Sit</li>
+							<li>Amet</li>
+						</ol>
+					</div>
+				</div>
+				<div class="box-4">
+					<div class="box">
+						<ul class="menu-vertical">
+							<li>
+								<a href="#">Menu 1</a>
+								<ul>
+									<li>
+										<a href="#">Submenu 1</a>
+									</li>
+									<li class="current">
+										<a href="#">Submenu 2</a>
+									</li>
+									<li>
+										<a href="#">Submenu 3</a>
+									</li>
+									<li>
+										<a href="#">Submenu 4</a>
+									</li>
+									<li>
+										<a href="#">Submenu 5</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu 2</a>
+								<ul>
+									<li>
+										<a href="#">Submenu 1</a>
+									</li>
+									<li>
+										<a href="#">Submenu 2</a>
+									</li>
+									<li>
+										<a href="#">Submenu 3</a>
+									</li>
+									<li>
+										<a href="#">Submenu 4</a>
+									</li>
+									<li>
+										<a href="#">Submenu 5</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu 3</a>
+								<ul>
+									<li>
+										<a href="#">Submenu 1</a>
+									</li>
+									<li>
+										<a href="#">Submenu 2</a>
+									</li>
+									<li>
+										<a href="#">Submenu 3</a>
+									</li>
+									<li>
+										<a href="#">Submenu 4</a>
+									</li>
+									<li>
+										<a href="#">Submenu 5</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu 4</a>
+								<ul>
+									<li>
+										<a href="#">Submenu 1</a>
+									</li>
+									<li>
+										<a href="#">Submenu 2</a>
+									</li>
+									<li>
+										<a href="#">Submenu 3</a>
+									</li>
+									<li>
+										<a href="#">Submenu 4</a>
+									</li>
+									<li>
+										<a href="#">Submenu 5</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>

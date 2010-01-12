@@ -1,0 +1,50 @@
+/*
+	FEM CSS Framework.
+
+	Licensed under GPL and MIT.
+*/
+
+/* table __________________________________*/
+table {
+	width:100%;
+	border:1px solid #bbb;
+	margin-bottom:1.8em;
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+caption {
+	font-style: italic;
+}
+th, td {
+	padding:.4em 20px;
+	text-align:left;
+}
+thead th {
+	border-bottom:2px solid #888;
+	background:#bbb;
+	padding:.4em 20px;
+}
+thead th.table-head {
+	color:#fff;
+	background-color:#555;
+	border:1px solid #555;
+}
+tbody th,
+tbody td {
+	border-top:1px solid #bbb;
+	border-bottom:1px solid #bbb;
+	background:#eee;
+}
+tbody tr.odd th,
+tbody tr.odd td {
+	background:#fff;
+}
+tfoot th,
+tfoot td {
+	border-top:2px solid #666;
+	background:#eee;
+}
+th.number,
+td.number {
+	text-align:right;
+}

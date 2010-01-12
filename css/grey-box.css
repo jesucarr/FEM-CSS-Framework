@@ -1,0 +1,29 @@
+/*
+	FEM CSS Framework.
+
+	Licensed under GPL and MIT.
+*/
+
+/* grey box __________________________________*/
+html {
+	font-size:75%; 
+}
+body {
+	background-color: #999;
+}
+.background {
+	background-color: #fff;
+}
+.border {
+	border: 5px solid #000;
+}
+.box {
+	background-color: #f6f6f6;
+	height: 1%;
+	overflow: auto;
+	margin-bottom: 1.8em;
+	padding: 1.8em 20px;
+}
+h5, h6 {
+	text-transform: uppercase;
+}

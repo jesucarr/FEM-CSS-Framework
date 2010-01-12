@@ -1,0 +1,64 @@
+/*
+	FEM CSS Framework.
+
+	Licensed under GPL and MIT.
+*/
+
+/* horizontal __________________________________*/
+ul.menu-horizontal {
+	display: block;
+	margin-bottom: 1.7em;
+	overflow: hidden;
+	height: 1%;
+	background-color: #ddd;
+}
+ul.menu-horizontal li {
+	float: left;
+	margin: 0;
+	overflow: hidden;
+	list-style: none;
+}
+ul.menu-horizontal li a {
+	display: block;
+	padding: .0em 20px;
+	color: #fff;
+	background-color: #888;
+	text-decoration: none;
+	font-weight: bold;
+	border-left: .01 solid #555;
+	border-top: .01 solid #777;
+}
+ul.menu-horizontal li a:hover, ul.menu-horizontal li.current a {
+	background-color: #666;
+}
+
+/* vertical __________________________________*/
+ul.menu-vertical {
+	margin-bottom: 1.8em;
+	overflow: hidden;
+}
+ul.menu-vertical li {
+	margin: 0;
+	overflow: hidden;
+	list-style: none;
+	display: inline;
+	
+}
+ul.menu-vertical li a {
+	display: block;
+	padding: 0.4em 20px;
+	color: #fff;
+	background-color: #888;
+	text-decoration: none;
+	font-weight: bold;
+	border-left: 1px solid #555;
+	border-top: 1px solid #777;
+	cursor: pointer;
+}
+ul.menu-vertical li ul li a {
+	padding-left: 40px;
+	background-color: #aaa;
+}
+ul.menu-vertical li a:hover, ul.menu-vertical li.current a {
+	background-color: #666;
+}

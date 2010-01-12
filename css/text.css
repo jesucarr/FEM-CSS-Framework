@@ -1,0 +1,115 @@
+/*
+	FEM CSS Framework.
+
+	Licensed under GPL and MIT.
+*/
+
+/* text styles __________________________________*/
+html {
+	font-size: 62.5%; /* 10px, 100% -> 16px, 75% -> 12px, 87.5 -> 14px, etc.*/ 
+}
+body, input, textarea, select, legend {
+	font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+	font-size: 1em;
+}
+a:link {
+	color: #000;
+}
+a:visit {
+	color: #ccc;
+}
+a:hover {
+	background-color: #666;
+	color: #fff;
+}
+a:active {
+	background-color: #ccc;
+	color: #000;
+}
+a:focus {
+	outline: 1px dotted;
+}
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 0.1em;
+	
+	height: 0;
+/*	margin: -.0em 0;*/
+	margin: -.9em 0;
+}
+html > body hr {
+	margin-top: 0;
+	margin-bottom: 1.7em;
+}
+p {
+	font-size: 1.2em; /* 12px */
+	line-height: 1.5em; /* 18px */
+	margin-bottom:1.5em;
+}
+/* headings _______________________________________*/
+h1{
+	font-size:3em;
+	margin-bottom:0.6em;
+	line-height:1.2em;
+}
+h2{
+	font-size:2em;
+	margin-bottom:0.9em;
+	line-height:0.9em;
+}
+h3{
+	font-size:1.5em;
+	margin-bottom:1.2em;
+	line-height:1.2em;
+}
+h4{
+	font-size:1.2em;
+/*	margin-bottom:1.5em;*/
+	line-height:1.5em;
+}
+h5, h6{
+	font-size:1em;
+/*	margin-bottom:1.8em;*/
+	line-height:1.8em;
+}
+/* lists _______________________________________*/
+ul{
+	margin-bottom:1.8em;
+	list-style:disc;
+}
+ol {
+	margin-bottom:1.8em;
+	list-style: decimal;
+}
+li{
+	font-size:1.2em;
+	line-height:1.5em;
+	margin-left: 30px;
+}
+li ul li, li ol li{
+	font-size:1em;
+	margin-left: 20px;
+}
+li ul, li ol{
+	margin-bottom:0;
+}
+/* quotes _______________________________________*/
+blockquote {
+	font-family: Georgia, 'Times New Roman', 'Liberation Serif', 'Nimbus Roman No9 L', serif;
+	font-size:1.5em;
+	line-height:1.2em;
+	padding-left:15px;
+	border-left:5px solid #ccc;
+	margin-bottom:1.2em;
+}
+blockquote cite {
+	display: block;
+	margin-top: 1.2em;
+}
+/* pre _______________________________________*/
+pre {
+	font-family: 'Courier New', 'Liberation Mono', FreeMono, serif;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
