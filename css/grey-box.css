@@ -1,5 +1,5 @@
 /*
-	FEM CSS Framework.
+	FEM CSS Framework 1.0
 
 	Licensed under GPL and MIT.
 */
@@ -19,10 +19,6 @@ body {
 }
 .box {
 	background-color: #f6f6f6;
-	height: 1%;
-	overflow: auto;
-	margin-bottom: 1.8em;
-	padding: 1.8em 20px;
 }
 h5, h6 {
 	text-transform: uppercase;
@@ -85,6 +81,9 @@ ul.menu-horizontal {
 	overflow: hidden;
 	height: 1%;
 	background-color: #ddd;
+}
+html > body .box {
+	height: auto;
 }
 ul.menu-horizontal li {
 	float: left;

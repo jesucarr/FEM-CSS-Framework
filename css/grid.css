@@ -1,5 +1,5 @@
 /*
-	FEM CSS Framework.
+	FEM CSS Framework 1.0
 
 	Licensed under GPL and MIT.
 */
@@ -17,6 +17,14 @@
 
 .right {
    float: right;
+}
+.box {
+	margin-bottom: 1.8em;
+	padding: 1.8em 20px;
+	height: 1%;
+}
+html > body .box {
+	height: auto;
 }
 /* Grid >> Global __________________________________*/
 

@@ -1,5 +1,5 @@
 /*
-	FEM CSS Framework.
+	FEM CSS Framework 1.0
 
 	Licensed under GPL and MIT.
 */
@@ -10,6 +10,9 @@ ul.menu-horizontal {
 	margin-bottom: 1.7em;
 	overflow: hidden;
 	height: 1%;
+}
+html > body ul.menu-horizontal {
+	height: auto;
 }
 ul.menu-horizontal li {
 	float: left;

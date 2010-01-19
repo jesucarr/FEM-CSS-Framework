@@ -1,10 +1,11 @@
-FEM CSS Framework
+FEM CSS Framework 1.0
 ============================
 
-FEM is based a lot in the 960 Grid System, but with a twist in the philosophy to make it more flexible and in my opinion more powerful.
-The downside is that it's a bit more complicated to learn, you write more code, and it's a bit heavier. Is up to you to decide if it's worth for you.
-I changed several things to adapt them to my taste, it doesn't mean that is better, and not everyone will like it, but if you do, great :)
+FEM CSS Framework is a 960px width + 12 column grid system + CSS common styles, to easy and fast develop web layouts.
 
+It is based in the 960 Grid System, but with a twist in the philosophy to make it more flexible and faster to play with boxes.
+
+Cross browser compatible. Tested in IE (6, 7, 8), Gecko (Firefox) and Webkit (Safari, Chrome) browsers.
 
 The grid (grid.css)
 ============================
@@ -70,9 +71,10 @@ By utilizing the prefix-X and prefix-X classes, we can leave white space before 
 
 I also added the left and right classes just to float elements for example within a box of text.
 
-One last point: if you want to use a border in one of the boxes, it'd break the grid sizes, so the best way to do it is adding a interior div and adding the border to it:
+One last point: if you want to use a border in one of the boxes, it'd break the grid sizes, so the best way to do it is adding a interior div and adding the border to it.
+I have one class by default that can be used for that purpose, called box. Suitable for styles like borders and backgrounds:
 <div class="box-4">
-	<div class="border">
+	<div class="box">
 		...
 	</div>
 </div>
@@ -119,4 +121,5 @@ http://meyerweb.com/eric/tools/css/reset/
 
 License
 ============================
-Licensed under GPL and MIT. Check licenses folder.
+
+Licensed under GPL and MIT . Check licenses folder.
