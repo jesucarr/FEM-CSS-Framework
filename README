@@ -1,11 +1,14 @@
 FEM CSS Framework 1.0
 ============================
 
+http://www.frontendmatters.com/projects/fem-css-framework/
+
 FEM CSS Framework is a 960px width + 12 column grid system + CSS common styles, to easy and fast develop web layouts.
 
 It is based in the 960 Grid System, but with a twist in the philosophy to make it more flexible and faster to play with boxes.
 
 Cross browser compatible. Tested in IE (6, 7, 8), Gecko (Firefox) and Webkit (Safari, Chrome) browsers.
+
 
 The grid (grid.css)
 ============================
@@ -79,7 +82,7 @@ I have one class by default that can be used for that purpose, called box. Suita
 	</div>
 </div>
 
-Check the examples.
+Check the examples in the project website above.
 
 
 The text (text.css)
@@ -100,15 +103,22 @@ The fonts used are a mix of Mac, Windows, and Linux fonts, to make them as simil
 Rapid prototyping styles (form.css, table.css, menu.css, grey-box.css)
 ============================
 
-I added some general styles to make wireframes fast. Basic styles for forms, tables, menu, and the Gray Box method to background boxes easy.
+I added some general styles to make wireframes fast. Basic styles for forms, tables, menu, and the Gray Box method to background boxes easy. http://v3.jasonsantamaria.com/archive//2004/05/24/grey_box_method.php
 They can be used as start point for our custom designs.
+
+Other notes
+============================
+
+This framework is pretty light. All CSS modules compressed are about 10kb, and only the grid about 6.5kb. You might want to develop with the individual modules first and then compress all the files in one for optimum performance.
+For your convenience I've compressed some combination of modules. You can customise your merged file using a service like http://refresh-sf.com/yui/
+You also have examples, templates (Photoshop and Fireworks), a printer ready sketch for brainstorming, and other resources.
 
 
 Credits and inspiration
 ============================
+
 http://960.gs
 http://www.blueprintcss.org/
-http://particletree.com/features/rediscovering-the-button-element/
 http://www.designinfluences.com/fluid960gs/12/fixed/jquery/
 http://csswizardry.com/typogridphy/
 http://v3.jasonsantamaria.com/archive//2004/05/24/grey_box_method.php
