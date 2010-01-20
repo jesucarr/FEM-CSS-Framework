@@ -106,6 +106,7 @@ Rapid prototyping styles (form.css, table.css, menu.css, grey-box.css)
 I added some general styles to make wireframes fast. Basic styles for forms, tables, menu, and the Gray Box method to background boxes easy. http://v3.jasonsantamaria.com/archive//2004/05/24/grey_box_method.php
 They can be used as start point for our custom designs.
 
+
 Other notes
 ============================
 
@@ -117,19 +118,20 @@ You also have examples, templates (Photoshop and Fireworks), a printer ready ske
 Credits and inspiration
 ============================
 
-http://960.gs
-http://www.blueprintcss.org/
-http://www.designinfluences.com/fluid960gs/12/fixed/jquery/
-http://csswizardry.com/typogridphy/
-http://v3.jasonsantamaria.com/archive//2004/05/24/grey_box_method.php
-http://24ways.org/2006/compose-to-a-vertical-rhythm
-http://www.alistapart.com/articles/settingtypeontheweb
-http://code.google.com/p/the-golden-grid/
-http://www.1kbgrid.com/
-http://meyerweb.com/eric/tools/css/reset/ 
+Nathan Smith http://960.gs
+Blueprint CSS Framework http://www.blueprintcss.org/
+Stephen Bau http://www.designinfluences.com/fluid960gs/12/fixed/jquery/
+Harry Roberts http://csswizardry.com/typogridphy/
+Jason Santa Maria http://v3.jasonsantamaria.com/archive//2004/05/24/grey_box_method.php
+Richard Rutter http://24ways.org/2006/compose-to-a-vertical-rhythm
+Wilson Miner http://www.alistapart.com/articles/settingtypeontheweb
+Vladimir Carrer http://code.google.com/p/the-golden-grid/
+Tyler Tate http://www.1kbgrid.com/
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/ 
+And many many other who posted tutorials, articles or books and I learnt from them. Thank you all. 
 
 
 License
 ============================
 
-Licensed under GPL and MIT . Check licenses folder.
+Licensed under GPL and MIT . This will allow you to use it in your project no matter what kind. Check licenses folder.
